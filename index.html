@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="circle-container">
+        <svg class="circle-timer" width="150" height="150">
+          <circle
+            class="circle-timer__ring"
+            stroke="white"
+            stroke-width="4"
+            cx="75"
+            cy="75"
+            r="67"
+            fill="transparent"
+          />
+        </svg>
+      </div>
+      <div id="timer-container">
+        <div id="timer">
+          <span id="circle-timer__minutes">00</span>
+          <span id="circle-timer__divade">:</span>
+          <span id="circle-timer__second">00</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="button is-info">Info</button>
+        <button class="button is-danger">Danger</button>
+      </div>
+    </div>
+    <script src="timer.js" type="module"></script>
+    <script src="progressbar.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+html,
+body {
+  background-color: #cadefc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+svg {
+  position: absolute;
+}
+
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#circle-timer {
+  text-align: center;
+}
+
+#timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#timer {
+  font-size: 20px;
+  color: white;
+}
+
+.circle-timer__ring {
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: 120s linear;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
